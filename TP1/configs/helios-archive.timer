@@ -1,0 +1,12 @@
+[Unit]
+Description=Declenche l archivage de la telemetrie Helios
+
+[Timer]
+OnCalendar=*-*-* 02:30:00
+AccuracySec=1min
+RandomizedDelaySec=120
+Persistent=yes
+Unit=helios-archive.service
+
+[Install]
+WantedBy=timers.target

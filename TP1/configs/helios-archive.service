@@ -1,0 +1,9 @@
+[Unit]
+Description=Archivage de la telemetrie Helios
+ConditionPathExists=/var/lib/helios/telemetry.csv
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/helios-archive.sh
+Nice=10
+IOSchedulingClass=idle

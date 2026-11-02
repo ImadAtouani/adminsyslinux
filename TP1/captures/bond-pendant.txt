@@ -1,0 +1,4 @@
+Currently Active Slave: enp0s10
+MII Status: up
+MII Status: down
+MII Status: up

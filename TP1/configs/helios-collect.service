@@ -1,0 +1,27 @@
+[Unit]
+Description=Collecteur de telemetrie Helios
+Documentation=https://wiki.helios.lan/collect
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=helios
+Group=helios
+Environment=HELIOS_INTERVAL=15
+ExecStart=/usr/local/sbin/helios-collect.sh
+Restart=on-failure
+RestartSec=5s
+TimeoutStopSec=20s
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/helios /var/log/helios
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=multi-user.target

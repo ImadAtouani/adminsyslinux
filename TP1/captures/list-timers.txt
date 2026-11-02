@@ -1,0 +1,4 @@
+NEXT                        LEFT     LAST PASSED UNIT                 ACTIVATES
+Tue 2026-11-03 02:30:32 CET 12h left -    -      helios-archive.timer helios-archive.service
+
+1 timers listed.

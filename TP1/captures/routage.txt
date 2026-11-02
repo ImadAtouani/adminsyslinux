@@ -1,0 +1,8 @@
+0:	from all lookup local
+100:	from 10.42.42.10 lookup transport proto static
+32766:	from all lookup main
+32767:	from all lookup default
+8.8.8.8 from 10.42.42.10 via 10.42.42.11 dev bond0.42 table transport uid 0 
+    cache 
+8.8.8.8 via 10.0.2.2 dev enp0s3 src 10.0.2.15 uid 0 
+    cache 
