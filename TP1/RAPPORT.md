@@ -63,14 +63,58 @@ Directives de l'unit (`configs/helios-collect.service`) :
 | `CapabilityBoundingSet=` (valeur vide) | Supprime **toutes** les capabilities Linux : le service ne peut rien faire de privilégié |
 | `WantedBy=multi-user.target` | Démarrage automatique au boot |
 
+**Durcissement supplémentaire (drop-in `hardening.conf`)**
+
+L'unit fournie donne un score de **5,3 (MEDIUM)**. Les lignes marquées `✗` de `systemd-analyze security` indiquent les directives manquantes ; elles sont ajoutées dans un drop-in séparé, sans toucher à l'unit ni à `override.conf` :
+
+| Directive | Effet |
+|---|---|
+| `PrivateDevices=yes` | `/dev` minimal, sans accès aux périphériques physiques |
+| `PrivateUsers=yes` | Espace de noms utilisateur privé |
+| `ProtectKernelModules=yes` | Interdit le chargement de modules noyau |
+| `ProtectKernelLogs=yes` | Interdit l'accès au tampon de logs du noyau |
+| `ProtectClock=yes` | Interdit de modifier l'horloge système |
+| `ProtectProc=invisible` | Cache les processus des autres utilisateurs dans `/proc` |
+| `LockPersonality=yes` | Verrouille le domaine d'exécution (personality) |
+| `MemoryDenyWriteExecute=yes` | Interdit les mappings mémoire à la fois inscriptibles et exécutables |
+| `RestrictRealtime=yes` | Interdit l'ordonnancement temps réel |
+| `RestrictNamespaces=yes` | Interdit la création de namespaces |
+| `RestrictAddressFamilies=AF_UNIX` | Seuls les sockets locaux sont autorisés : valide ici car le collecteur n'ouvre aucun socket réseau |
+| `SystemCallFilter=@system-service` | Liste blanche d'appels système réservée aux services classiques |
+| `SystemCallErrorNumber=EPERM` | Un appel système refusé renvoie `EPERM` au lieu de tuer le processus |
+| `SystemCallArchitectures=native` | Seule l'architecture native est autorisée |
+| `UMask=0077` | Fichiers créés accessibles uniquement par le compte du service |
+
+`ProcSubset=pid` n'a volontairement pas été ajouté : il masquerait `/proc/loadavg` et `/proc/meminfo`, que le collecteur lit, et les champs écrits seraient vides.
+
 **Score `systemd-analyze security`**
 
 | Version | Score | Niveau |
 |---|---|---|
-| Avant durcissement | **9,2** | UNSAFE |
-| Après durcissement | **5,3** | MEDIUM |
+| Unit fournie (avant) | **5,3** | MEDIUM |
+| Avec `hardening.conf` (après) | **1,1** | OK |
+| Référence : unit sans aucune directive de durcissement | 9,2 | UNSAFE |
 
-Gain de 3,9 points. Le « avant » a été mesuré sur une copie temporaire de l'unit sans les directives de durcissement, supprimée ensuite.
+```
+✓ UMask=    Files created by service are accessible only by service's own user by default
+
+→ Overall exposure level for helios-collect.service: 1.1 OK
+```
+
+Vérifications après durcissement :
+
+- Le service reste `active (running)` ; `Drop-In: hardening.conf, override.conf`.
+- Les lignes du collecteur restent complètes (date, charge, mémoire disponible) :
+
+```
+2026-11-02T14:50:47+01:00,0.00,1415492
+2026-11-02T14:50:52+01:00,0.00,1415744
+2026-11-02T14:50:57+01:00,0.00,1416248
+```
+
+- `MemoryMax=100663296` est inchangé.
+
+Le score de référence (9,2) a été mesuré sur une copie temporaire de l'unit sans directives de durcissement, supprimée ensuite.
 
 **État actuel du service** (`systemctl status`) :
 
@@ -78,13 +122,11 @@ Gain de 3,9 points. Le « avant » a été mesuré sur une copie temporaire de l
 helios-collect.service - Collecteur de telemetrie Helios
      Loaded: loaded (/etc/systemd/system/helios-collect.service; enabled; preset: disabled)
     Drop-In: /etc/systemd/system/helios-collect.service.d
-             └─override.conf
-     Active: active (running) since Mon 2026-11-02 13:57:06 CET
-   Main PID: 3390 (helios-collect.)
-      Tasks: 2 (limit: 10637)
+             └─hardening.conf, override.conf
+     Active: active (running) since Mon 2026-11-02 14:50:26 CET
 ```
 
-Il est `enabled` et le drop-in est bien pris en compte.
+Il est `enabled` et les drop-ins sont bien pris en compte.
 
 **Preuve de redémarrage automatique** (`kill -9` du MainPID) :
 
@@ -349,6 +391,7 @@ Le dépôt du fichier a déclenché l'archivage immédiatement (14:21:16) ✔.
 | `systemctl is-enabled helios-collect.service` → `enabled` | ✔ |
 | Le service survit à un `kill -9` | ✔ (PID 3390 → 4547, `NRestarts=1`) |
 | `MemoryMax=100663296` sans modifier l'unit d'origine | ✔ |
+| Score `systemd-analyze security` : 5,3 → 1,1 avec `hardening.conf` | ✔ |
 | `list-dependencies helios.target` montre `helios-collect.service` | ✔ |
 | Bond : deux ports `MII Status: up` + un `Active Slave` | ✔ |
 | Coupure du lien : 2 requêtes perdues au maximum | ✔ (1 perdue) |

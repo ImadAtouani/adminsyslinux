@@ -1,0 +1,8 @@
+[Path]
+# PathChanged (et non PathExistsGlob) : le script ne vide pas l'inbox, un PathExistsGlob
+# re-déclencherait le service en boucle jusqu'à « unit-start-limit-hit »
+PathChanged=/srv/helios/inbox
+Unit=helios-archive.service
+
+[Install]
+WantedBy=paths.target
