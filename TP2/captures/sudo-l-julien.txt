@@ -1,0 +1,7 @@
+Entrées Defaults correspondant pour julien sur localhost :
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, timestamp_timeout=5, passwd_tries=2, lecture=always, log_output, iolog_dir=/var/log/sudo-io, logfile=/var/log/sudo-helios.log
+
+L'utilisateur julien peut utiliser les commandes suivantes sur localhost :
+    (root) /usr/bin/systemctl start helios-collect.service, /usr/bin/systemctl stop helios-collect.service, /usr/bin/systemctl restart helios-collect.service, /usr/bin/systemctl status helios-collect.service, /usr/bin/systemctl start helios.target, /usr/bin/systemctl stop helios.target, /usr/bin/journalctl -u helios-collect.service *, /usr/bin/journalctl -u helios-archive.service *
+    (helios) /usr/bin/ls /var/lib/helios, /usr/bin/cat /var/lib/helios/telemetry.csv
+    (root) !/usr/bin/su, !/usr/bin/sudo, !/usr/bin/passwd root, !/usr/bin/vi, !/usr/bin/vim, !/usr/bin/less, !/usr/bin/find

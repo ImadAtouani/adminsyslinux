@@ -1,0 +1,4 @@
+/etc/sudoers.d/90-helios-ops : analyse réussie
+/etc/sudoers : analyse réussie
+/etc/sudoers.d/90-helios-ops : analyse réussie
+/etc/sudoers.d/91-nadia-edition : analyse réussie

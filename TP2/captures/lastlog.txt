@@ -1,0 +1,3 @@
+-rwxr-sr-x. 1 root telemetry 17504  2 nov.  16:03 /usr/local/bin/helios-lastlog
+rc attendu != 0 : 1
+rc attendu 0 : 0

@@ -1,0 +1,6 @@
+0027
+drwxr-x---. 2 nadia transport 6  2 nov.  15:57 /tmp/d1
+-rw-r-----. 1 nadia transport 0  2 nov.  15:57 /tmp/u1
+drwxrwxr-x. 2 nadia transport 6  2 nov.  15:57 /tmp/d2
+-rw-rw-r--. 1 nadia transport 0  2 nov.  15:57 /tmp/u2
+-rw-------. 1 nadia transport 0  2 nov.  15:57 /tmp/u3

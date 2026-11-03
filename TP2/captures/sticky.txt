@@ -1,0 +1,3 @@
+drwxrwxrwt. 2 root root 6  2 nov.  15:45 /srv/helios/depot
+rc attendu != 0 : 1
+rc attendu 0 : 0

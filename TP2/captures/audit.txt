@@ -1,0 +1,85 @@
+sysops 1000 /bin/bash
+julien 5100 /bin/bash
+nadia 5101 /bin/bash
+tarek 5102 /bin/bash
+audit-ext 5103 /bin/bash
+drwxrwxrwt /srv/helios/depot
+drwxrws--- transport /srv/helios/projets/transport
+drwxrws--- transport /srv/helios/projets/transport/semaine-41
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+--
+
+# file: srv/helios/projets/transport/tournee-nadia.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+--
+
+# file: srv/helios/projets/transport/tournee-tarek.csv
+# owner: tarek
+# group: transport
+user::rw-
+user:audit-ext:r--
+--
+
+# file: srv/helios/projets/transport/partage.txt
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+--
+
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx
+user:audit-ext:r--
+--
+# file: srv/helios/projets/transport/semaine-41
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r--
+--
+
+# file: srv/helios/projets/transport/.tournee-nadia.csv.swp
+# owner: root
+# group: transport
+user::rw-
+user:audit-ext:r--
+--
+
+# file: srv/helios/projets/transport/.tournee-nadia.csv.swo
+# owner: root
+# group: transport
+user::rw-
+user:audit-ext:r--
+Entrées Defaults correspondant pour julien sur localhost :
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, timestamp_timeout=5, passwd_tries=2, lecture=always, log_output, iolog_dir=/var/log/sudo-io, logfile=/var/log/sudo-helios.log
+
+L'utilisateur julien peut utiliser les commandes suivantes sur localhost :
+    (root) /usr/bin/systemctl start helios-collect.service, /usr/bin/systemctl stop helios-collect.service, /usr/bin/systemctl restart helios-collect.service, /usr/bin/systemctl status helios-collect.service, /usr/bin/systemctl start helios.target, /usr/bin/systemctl stop helios.target, /usr/bin/journalctl -u helios-collect.service *, /usr/bin/journalctl -u helios-archive.service *
+    (helios) /usr/bin/ls /var/lib/helios, /usr/bin/cat /var/lib/helios/telemetry.csv
+    (root) !/usr/bin/su, !/usr/bin/sudo, !/usr/bin/passwd root, !/usr/bin/vi, !/usr/bin/vim, !/usr/bin/less, !/usr/bin/find
+Entrées Defaults correspondant pour nadia sur localhost :
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/sbin\:/bin\:/usr/sbin\:/usr/bin, !sudoedit_checkdir
+
+L'utilisateur nadia peut utiliser les commandes suivantes sur localhost :
+    (root) sudoedit /srv/helios/projets/transport/*
+L'utilisateur tarek n'est pas autorisé à exécuter sudo sur localhost.
+L'utilisateur audit-ext n'est pas autorisé à exécuter sudo sur localhost.
+Last password change					: nov. 02, 2026
+Password expires					: janv. 31, 2027
+Password inactive					: févr. 07, 2027
+Account expires						: nov. 23, 2026
+Minimum number of days between password change		: 1
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 14

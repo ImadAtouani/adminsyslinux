@@ -1,0 +1,10 @@
+# file: srv/helios/projets/transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rwx	#effective:rw-
+group:transport:rwx	#effective:rw-
+mask::rw-
+other::---
+

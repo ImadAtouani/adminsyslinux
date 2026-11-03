@@ -1,0 +1,11 @@
+tail: impossible d'ouvrir '/var/log/helios/app.log' en lecture: Permission non accordée
+2026-11-02T16:02:36+01:00 INFO trame 21 ok
+2026-11-02T16:02:36+01:00 INFO trame 22 ok
+2026-11-02T16:02:36+01:00 INFO trame 23 ok
+2026-11-02T16:02:36+01:00 INFO trame 24 ok
+2026-11-02T16:02:36+01:00 INFO trame 25 ok
+2026-11-02T16:02:36+01:00 INFO trame 26 ok
+2026-11-02T16:02:36+01:00 INFO trame 27 ok
+2026-11-02T16:02:36+01:00 INFO trame 28 ok
+2026-11-02T16:02:36+01:00 INFO trame 29 ok
+2026-11-02T16:02:36+01:00 INFO trame 30 ok

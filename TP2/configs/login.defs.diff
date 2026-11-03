@@ -1,0 +1,24 @@
+--- /root/login.defs.orig	2025-12-29 10:05:25.000000000 +0100
++++ /etc/login.defs	2026-11-02 15:23:30.707163511 +0100
+@@ -114,7 +114,7 @@
+ # 022 is the default value, but 027, or even 077, could be considered
+ # for increased privacy. There is no One True Answer here: each sysadmin
+ # must make up their mind.
+-UMASK		022
++UMASK 027
+ 
+ # HOME_MODE is used by useradd(8) and newusers(8) to set the mode for new
+ # home directories.
+@@ -128,9 +128,9 @@
+ #	PASS_MIN_LEN	Minimum acceptable password length.
+ #	PASS_WARN_AGE	Number of days warning given before a password expires.
+ #
+-PASS_MAX_DAYS	99999
+-PASS_MIN_DAYS	0
+-PASS_WARN_AGE	7
++PASS_MAX_DAYS 90
++PASS_MIN_DAYS 1
++PASS_WARN_AGE 14
+ 
+ # Currently PASS_MIN_LEN is not supported
+ 

@@ -1,0 +1,3 @@
+nov.  2 16:54:57 2026 : julien : HOST=localhost.localdomain ; TTY=pts/4 ; CWD=/home/julien ; USER=root ; TSID=000001 ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+nov.  2 16:55:46 2026 : julien : HOST=localhost.localdomain ; TTY=pts/4 ; CWD=/home/julien ; USER=helios ; TSID=000002 ; COMMAND=/usr/bin/cat /var/lib/helios/telemetry.csv
+nov.  2 16:55:52 2026 : julien : HOST=localhost.localdomain ; TTY=pts/4 ; CWD=/home/julien ; USER=root ; TSID=000003 ; COMMAND=/usr/bin/journalctl -u helios-collect.service -n 5

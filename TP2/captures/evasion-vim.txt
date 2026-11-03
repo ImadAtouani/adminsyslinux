@@ -1,0 +1,7 @@
+[nadia@localhost ~]$ sudo vim /srv/helios/projets/transport/tournee-nadia.csv
+
+uid=0(root) gid=0(root) groupes=0(root) contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+Appuyez sur ENTRÉE ou tapez une commande pour continuer
+[root@localhost nadia]# id
+uid=0(root) gid=0(root) groupes=0(root) contexte=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023

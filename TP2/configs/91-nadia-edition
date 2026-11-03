@@ -1,0 +1,2 @@
+Defaults:nadia !sudoedit_checkdir
+nadia ALL=(root) sudoedit /srv/helios/projets/transport/*

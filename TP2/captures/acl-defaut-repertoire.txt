@@ -1,0 +1,16 @@
+# file: srv/helios/projets/transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+

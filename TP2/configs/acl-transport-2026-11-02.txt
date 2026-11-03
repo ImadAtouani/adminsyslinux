@@ -1,0 +1,78 @@
+# file: transport
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# file: transport/tournee-nadia.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::r--
+mask::r--
+other::---
+
+# file: transport/tournee-tarek.csv
+# owner: tarek
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::r--
+mask::r--
+other::---
+
+# file: transport/partage.txt
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+group::rw-
+mask::rw-
+other::r--
+
+# file: transport/nouvelle.csv
+# owner: nadia
+# group: transport
+user::rw-
+group::r--
+other::---
+
+# file: transport/tournee-j2.csv
+# owner: nadia
+# group: transport
+user::rw-
+user:tarek:rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+
+# file: transport/semaine-41
+# owner: nadia
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r--
+group::rwx
+group:transport:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+

@@ -1,0 +1,17 @@
+# file: transport-copie
+# owner: julien
+# group: transport
+# flags: -s-
+user::rwx
+user:audit-ext:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+
+# file: transport-copie2
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::---
