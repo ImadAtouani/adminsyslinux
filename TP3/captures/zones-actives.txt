@@ -1,0 +1,8 @@
+drop
+  interfaces: enp0s3
+internal
+  interfaces: bond0 bond0.42
+public
+  interfaces: enp0s10 enp0s9
+work
+  interfaces: enp0s8

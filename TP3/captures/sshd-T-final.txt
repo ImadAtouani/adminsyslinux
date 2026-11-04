@@ -1,0 +1,6 @@
+port 2242
+maxauthtries 3
+permitrootlogin no
+passwordauthentication no
+loglevel VERBOSE
+allowgroups ssh-admins

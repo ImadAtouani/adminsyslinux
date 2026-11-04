@@ -1,0 +1,14 @@
+work (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s8
+  sources: 192.168.56.0/24
+  services: ssh
+  ports: 
+  protocols: 
+  forward: yes
+  masquerade: no
+  forward-ports: 
+  source-ports: 
+  icmp-blocks: 
+  rich rules: 

@@ -1,0 +1,5 @@
+Archived and active journals take up 8.0M in the file system.
+drwxr-sr-x+ 2 root systemd-journal 4096  4 nov.  12:58 /var/log/journal/f5b60f4081014460864fdc522418b393
+PASS: /var/log/journal/f5b60f4081014460864fdc522418b393/user-1000@45751ea7864a4da3a285bebd8195e431-0000000000000aac-00065f4f2fe5f373.journal
+PASS: /var/log/journal/f5b60f4081014460864fdc522418b393/user-1000.journal
+PASS: /var/log/journal/f5b60f4081014460864fdc522418b393/user-5100.journal

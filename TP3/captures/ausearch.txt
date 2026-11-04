@@ -1,0 +1,70 @@
+type=CONFIG_CHANGE msg=audit(04/11/2026 12:56:28.077:197) : auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:56:28.077:198) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(04/11/2026 12:56:28.077:198) : item=0 name=/etc/sudoers.d inode=889199 dev=fd:00 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:56:28.077:198) : cwd=/root 
+type=SOCKADDR msg=audit(04/11/2026 12:56:28.077:198) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(04/11/2026 12:56:28.077:198) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc8695bd10 a2=0x438 a3=0x0 items=1 ppid=2482 pid=2502 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(04/11/2026 12:56:28.077:198) : auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:57:20.233:214) : proctitle=touch /etc/sudoers.d/test-audit 
+type=PATH msg=audit(04/11/2026 12:57:20.233:214) : item=1 name=/etc/sudoers.d/test-audit inode=901186 dev=fd:00 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:57:20.233:214) : item=0 name=/etc/sudoers.d/ inode=889199 dev=fd:00 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:57:20.233:214) : cwd=/root 
+type=SYSCALL msg=audit(04/11/2026 12:57:20.233:214) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7fff0cbc0764 a2=O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK a3=0x1b6 items=2 ppid=2243 pid=2565 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=touch exe=/usr/bin/touch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:57:20.237:216) : proctitle=rm -i -f /etc/sudoers.d/test-audit 
+type=PATH msg=audit(04/11/2026 12:57:20.237:216) : item=1 name=/etc/sudoers.d/test-audit inode=901186 dev=fd:00 mode=file,640 ouid=root ogid=root rdev=00:00 obj=unconfined_u:object_r:etc_t:s0 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:57:20.237:216) : item=0 name=/etc/sudoers.d/ inode=889199 dev=fd:00 mode=dir,750 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:etc_t:s0 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:57:20.237:216) : cwd=/root 
+type=SYSCALL msg=audit(04/11/2026 12:57:20.237:216) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x55ccb52284d0 a2=0x0 a3=0x100 items=2 ppid=2243 pid=2566 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=rm exe=/usr/bin/rm subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=sudoers 
+type=SOCKADDR msg=audit(04/11/2026 12:56:28.083:201) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(04/11/2026 12:56:28.083:201) : arch=x86_64 syscall=sendto success=yes exit=1100 a0=0x3 a1=0x7ffc8695bd10 a2=0x44c a3=0x0 items=1 ppid=2482 pid=2502 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=(null) 
+type=CONFIG_CHANGE msg=audit(04/11/2026 12:56:28.083:201) : auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 op=add_rule key=helios-setgid list=exit res=yes 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:57:26.656:225) : proctitle=/usr/local/bin/helios-lastlog 
+type=PATH msg=audit(04/11/2026 12:57:26.656:225) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50331788 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:57:26.656:225) : item=0 name=/usr/local/bin/helios-lastlog inode=235686 dev=fd:00 mode=file,sgid,755 ouid=root ogid=telemetry rdev=00:00 obj=unconfined_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:57:26.656:225) : cwd=/home/julien 
+type=EXECVE msg=audit(04/11/2026 12:57:26.656:225) : argc=1 a0=/usr/local/bin/helios-lastlog 
+type=SYSCALL msg=audit(04/11/2026 12:57:26.656:225) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x5576a52fa650 a1=0x5576a5319300 a2=0x5576a531c3c0 a3=0x1b6 items=2 ppid=2574 pid=2606 auid=sysops uid=julien gid=transport euid=julien suid=julien fsuid=julien egid=telemetry sgid=telemetry fsgid=telemetry tty=(none) ses=5 comm=helios-lastlog exe=/usr/local/bin/helios-lastlog subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=helios-setgid 
+type=PROCTITLE msg=audit(04/11/2026 12:58:55.093:258) : proctitle=tail -10 
+type=PATH msg=audit(04/11/2026 12:58:55.093:258) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50331788 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:58:55.093:258) : item=0 name=/bin/tail inode=34309668 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:58:55.093:258) : cwd=/root 
+type=EXECVE msg=audit(04/11/2026 12:58:55.093:258) : argc=2 a0=tail a1=-10 
+type=SYSCALL msg=audit(04/11/2026 12:58:55.093:258) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d24e8fbb0 a1=0x562d24e914c0 a2=0x562d24e59a70 a3=0x8 items=2 ppid=2731 pid=2736 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:58:55.100:259) : proctitle=tail -20 
+type=PATH msg=audit(04/11/2026 12:58:55.100:259) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50331788 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:58:55.100:259) : item=0 name=/bin/tail inode=34309668 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:58:55.100:259) : cwd=/root 
+type=EXECVE msg=audit(04/11/2026 12:58:55.100:259) : argc=2 a0=tail a1=-20 
+type=SYSCALL msg=audit(04/11/2026 12:58:55.100:259) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d24d861d0 a1=0x562d24e914c0 a2=0x562d24e59a70 a3=0x8 items=2 ppid=2731 pid=2738 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=tail exe=/usr/bin/tail subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=PROCTITLE msg=audit(04/11/2026 12:58:55.100:260) : proctitle=ausearch -k privesc -i --start today 
+type=PATH msg=audit(04/11/2026 12:58:55.100:260) : item=1 name=/lib64/ld-linux-x86-64.so.2 inode=50331788 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:ld_so_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(04/11/2026 12:58:55.100:260) : item=0 name=/sbin/ausearch inode=50965508 dev=fd:00 mode=file,755 ouid=root ogid=root rdev=00:00 obj=system_u:object_r:bin_t:s0 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(04/11/2026 12:58:55.100:260) : cwd=/root 
+type=EXECVE msg=audit(04/11/2026 12:58:55.100:260) : argc=6 a0=ausearch a1=-k a2=privesc a3=-i a4=--start a5=today 
+type=SYSCALL msg=audit(04/11/2026 12:58:55.100:260) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x562d24e92e60 a1=0x562d24d860d0 a2=0x562d24e59a70 a3=0x8 items=2 ppid=2731 pid=2737 auid=sysops uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=5 comm=ausearch exe=/usr/sbin/ausearch subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key=privesc 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:53:31.160:114) : pid=2160 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=ssh res=failed' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:53:31.180:115) : pid=2160 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey_auth grantors=auth-key acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=? res=success' 
+----
+type=USER_LOGIN msg=audit(04/11/2026 12:53:31.282:127) : pid=2160 uid=root auid=sysops ses=4 subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/libexec/openssh/sshd-session hostname=localhost.localdomain addr=192.168.56.1 terminal=/dev/pts/1 res=success' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:53:37.220:140) : pid=2199 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=ssh res=failed' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:53:37.240:141) : pid=2199 uid=root auid=unset ses=unset subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=pubkey_auth grantors=auth-key acct=sysops exe=/usr/libexec/openssh/sshd-session hostname=? addr=192.168.56.1 terminal=? res=success' 
+----
+type=USER_LOGIN msg=audit(04/11/2026 12:53:37.334:153) : pid=2199 uid=root auid=sysops ses=5 subj=system_u:system_r:sshd_t:s0-s0:c0.c1023 msg='op=login id=sysops exe=/usr/libexec/openssh/sshd-session hostname=localhost.localdomain addr=192.168.56.1 terminal=/dev/pts/1 res=success' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:53:41.688:155) : pid=2238 uid=sysops auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=sysops exe=/usr/bin/sudo hostname=localhost.localdomain addr=? terminal=/dev/pts/1 res=success' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:57:26.516:218) : pid=2573 uid=root auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_rootok acct=julien exe=/usr/bin/su hostname=localhost.localdomain addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:57:38.523:231) : pid=2627 uid=root auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_rootok acct=julien exe=/usr/bin/su hostname=localhost.localdomain addr=? terminal=/dev/pts/2 res=success' 
+----
+type=USER_AUTH msg=audit(04/11/2026 12:58:00.483:238) : pid=2672 uid=julien auid=sysops ses=5 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_faillock,pam_usertype,pam_localuser,pam_unix acct=julien exe=/usr/bin/sudo hostname=localhost.localdomain addr=? terminal=/dev/pts/2 res=success' 

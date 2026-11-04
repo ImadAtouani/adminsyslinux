@@ -1,0 +1,4 @@
+256 SHA256:Aom0GBNT1mlRDceYgBz1QMm9KDA/hbSM5i53JMXMFj4 no comment (ECDSA)
+256 SHA256:9APHH3cgFn/SKBkFzNzQVAykoY4KaliANF9cY0+7G5g no comment (ED25519)
+3072 SHA256:7Bv8/3GXAsfWaNJ9ba21pKYt0fN/2isWMQx4SZYJGQg no comment (RSA)
+-rw-------. 1 sysops sysops 89  2 nov.  18:29 /home/sysops/.ssh/authorized_keys

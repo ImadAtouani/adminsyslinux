@@ -1,0 +1,11 @@
+[Unit]
+Description=Declenche la detection d echecs SSH toutes les 2 minutes
+
+[Timer]
+OnCalendar=*:0/2
+Persistent=no
+AccuracySec=10s
+Unit=helios-watch-auth.service
+
+[Install]
+WantedBy=timers.target

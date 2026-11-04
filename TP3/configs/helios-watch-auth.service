@@ -1,0 +1,10 @@
+[Unit]
+Description=Detection des echecs d authentification SSH et blocage des sources
+After=firewalld.service sshd.service
+Wants=firewalld.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/helios-watch-auth.sh
+Nice=10
+IOSchedulingClass=idle

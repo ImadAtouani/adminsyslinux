@@ -1,0 +1,213 @@
+### 1
+2026-11-04T12:52:24+0100 localhost.localdomain sshd[860]: error: Bind to port 2242 on 10.42.0.10 failed: Cannot assign requested address.
+2026-11-04T12:52:24+0100 localhost.localdomain sshd[860]: error: Bind to port 2242 on 192.168.56.10 failed: Cannot assign requested address.
+2026-11-04T12:52:24+0100 localhost.localdomain sshd[860]: fatal: Cannot bind any address.
+2026-11-04T12:52:24+0100 localhost.localdomain systemd[1]: sshd.service: Failed with result 'exit-code'.
+2026-11-04T12:52:24+0100 localhost.localdomain systemd[1]: Failed to start OpenSSH server daemon.
+### 2
+nov. 02 19:12:48 localhost.localdomain sshd-session[18647]: Accepted publickey for sysops from 192.168.56.11 port 46974 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+nov. 02 19:13:47 localhost.localdomain sshd-session[18699]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+nov. 02 19:13:47 localhost.localdomain sshd-session[18699]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+nov. 02 19:13:47 localhost.localdomain sshd-session[18699]: Accepted publickey for sysops from 192.168.56.11 port 54502 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+nov. 02 19:13:47 localhost.localdomain sshd-session[18736]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+nov. 02 19:13:47 localhost.localdomain sshd-session[18736]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+nov. 02 19:13:47 localhost.localdomain sshd-session[18736]: Accepted publickey for sysops from 192.168.56.11 port 54548 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+-- Boot 75c74afdc967436399aa589ff1edb9e3 --
+nov. 04 12:53:24 localhost.localdomain sshd-session[2109]: Failed publickey for sysops from 192.168.56.1 port 61430 ssh2: RSA SHA256:36q3epZTGR5toscKXdE18Jo0ThefsSaU2Vn356o7ZAQ
+nov. 04 12:53:24 localhost.localdomain sshd-session[2109]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:24 localhost.localdomain sshd-session[2109]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:24 localhost.localdomain sshd-session[2109]: Accepted publickey for sysops from 192.168.56.1 port 61430 ssh2: ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Failed publickey for sysops from 192.168.56.1 port 61431 ssh2: RSA SHA256:36q3epZTGR5toscKXdE18Jo0ThefsSaU2Vn356o7ZAQ
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Accepted publickey for sysops from 192.168.56.1 port 61431 ssh2: ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Failed publickey for sysops from 192.168.56.1 port 61432 ssh2: RSA SHA256:36q3epZTGR5toscKXdE18Jo0ThefsSaU2Vn356o7ZAQ
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted publickey for sysops from 192.168.56.1 port 61432 ssh2: ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY
+### 3
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: Accepted publickey for sysops from 192.168.56.1 port 61431 ssh2: ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+nov. 04 12:53:31 localhost.localdomain sshd-session[2160]: User child is on pid 2163
+nov. 04 12:53:31 localhost.localdomain sshd-session[2163]: Starting session: shell on pts/1 for sysops from 192.168.56.1 port 61431 id 0
+nov. 04 12:53:33 localhost.localdomain sshd-session[2163]: Received disconnect from 192.168.56.1 port 61431:11: disconnected by user
+nov. 04 12:53:33 localhost.localdomain sshd-session[2163]: Disconnected from user sysops 192.168.56.1 port 61431
+nov. 04 12:53:33 localhost.localdomain sshd-session[2160]: pam_unix(sshd:session): session closed for user sysops
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: main: SHA1 in signatures is disabled for RSA keys
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Connection from 192.168.56.1 port 61432 on 192.168.56.10 port 2242 rdomain ""
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Failed publickey for sysops from 192.168.56.1 port 61432 ssh2: RSA SHA256:36q3epZTGR5toscKXdE18Jo0ThefsSaU2Vn356o7ZAQ
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Postponed publickey for sysops from 192.168.56.1 port 61432 ssh2 [preauth]
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted key ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY found at /home/sysops/.ssh/authorized_keys:1
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: Accepted publickey for sysops from 192.168.56.1 port 61432 ssh2: ED25519 SHA256:lHdPGfoQ+xPln3O6bG4PqryAAwzRYqO0uoX1xWslfZY
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+nov. 04 12:53:37 localhost.localdomain sshd-session[2199]: User child is on pid 2202
+nov. 04 12:53:37 localhost.localdomain sshd-session[2202]: Starting session: shell on pts/1 for sysops from 192.168.56.1 port 61432 id 0
+nov. 04 12:53:41 localhost.localdomain sudo[2238]:   sysops : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+nov. 04 12:53:41 localhost.localdomain sudo[2238]: pam_unix(sudo-i:session): session opened for user root(uid=0) by sysops(uid=1000)
+### 4
+-- No entries --
+### 5
+{
+	"_GID" : "1000",
+	"_SYSTEMD_UNIT" : "session-1.scope",
+	"_HOSTNAME" : "localhost.localdomain",
+	"_MACHINE_ID" : "f5b60f4081014460864fdc522418b393",
+	"_SYSTEMD_CGROUP" : "/user.slice/user-1000.slice/session-1.scope",
+	"_SYSTEMD_SLICE" : "user-1000.slice",
+	"SYSLOG_TIMESTAMP" : "Nov  4 12:52:45 ",
+	"_SYSTEMD_USER_SLICE" : "-.slice",
+	"_AUDIT_SESSION" : "1",
+	"SYSLOG_IDENTIFIER" : "sudo",
+	"_SYSTEMD_OWNER_UID" : "1000",
+	"_UID" : "1000",
+	"_CAP_EFFECTIVE" : "1ffffffffff",
+	"_EXE" : "/usr/bin/sudo",
+	"SYSLOG_FACILITY" : "10",
+	"MESSAGE" : "  sysops : TTY=tty1 ; PWD=/root ; USER=root ; COMMAND=/bin/bash",
+	"_CMDLINE" : "sudo -i",
+	"__CURSOR" : "s=45751ea7864a4da3a285bebd8195e431;i=100c;b=75c74afdc967436399aa589ff1edb9e3;m=1cbd48e;t=65f72046971eb;x=2db0fffc4659fe3f",
+	"_TRANSPORT" : "syslog",
+	"_SYSTEMD_INVOCATION_ID" : "986947a94ecc4ab7a7de1a4562e3191d",
+	"_PID" : "2025",
+	"PRIORITY" : "5",
+	"__REALTIME_TIMESTAMP" : "1793793165193707",
+	"_COMM" : "sudo",
+	"_RUNTIME_SCOPE" : "system",
+	"__MONOTONIC_TIMESTAMP" : "30135438",
+	"_SOURCE_REALTIME_TIMESTAMP" : "1793793165193698",
+	"_SELINUX_CONTEXT" : "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023",
+	"_AUDIT_LOGINUID" : "1000",
+	"_SYSTEMD_SESSION" : "1",
+	"_BOOT_ID" : "75c74afdc967436399aa589ff1edb9e3"
+}
+{
+	"_RUNTIME_SCOPE" : "system",
+	"_SYSTEMD_OWNER_UID" : "1000",
+	"_TRANSPORT" : "syslog",
+	"_SYSTEMD_INVOCATION_ID" : "986947a94ecc4ab7a7de1a4562e3191d",
+	"__REALTIME_TIMESTAMP" : "1793793165199777",
+	"SYSLOG_TIMESTAMP" : "Nov  4 12:52:45 ",
+### 6
+nov. 02 14:43:37 localhost kernel: Warning: Unmaintained driver is detected: e1000
+nov. 02 14:43:37 localhost kernel: Warning: Unmaintained driver is detected: e1000
+nov. 02 14:43:37 localhost kernel: Warning: Unmaintained driver is detected: e1000
+nov. 02 14:43:37 localhost kernel: Warning: Unmaintained driver is detected: e1000_init_module
+nov. 02 14:43:37 localhost kernel: Warning: Unmaintained driver is detected: e1000
+nov. 02 14:43:45 localhost kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* vmwgfx seems to be running on an unsupported hypervisor.
+nov. 02 14:43:45 localhost kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* This configuration is likely broken.
+nov. 02 14:43:45 localhost kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* Please switch to a supported graphics device to avoid problems.
+nov. 02 15:42:00 localhost.localdomain systemd[1]: Failed to start dnf makecache.
+nov. 02 16:24:21 localhost.localdomain systemd[1]: systemd-udevd.service: Watchdog timeout (limit 3min)!
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: Process 614 (systemd-journal) of user 0 dumped core.
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: Coredump diverted to /var/lib/systemd/coredump/core.systemd-journal.0.845e5c72a16b47be8d6aadf5adbda85d.614.1793633061000000.zst
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: Stack trace of thread 614:
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #0  0x00007fa42890fd0a epoll_wait (libc.so.6 + 0x10fd0a)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #1  0x00007fa428e890d8 sd_event_wait (libsystemd-shared-252.so + 0x2890d8)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #2  0x00007fa428e8b3db sd_event_run (libsystemd-shared-252.so + 0x28b3db)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #3  0x000055b9a8c95065 main (systemd-journald + 0xa065)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #4  0x00007fa42882a610 __libc_start_call_main (libc.so.6 + 0x2a610)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #5  0x00007fa42882a6c0 __libc_start_main@@GLIBC_2.34 (libc.so.6 + 0x2a6c0)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: #6  0x000055b9a8c95745 _start (systemd-journald + 0xa745)
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: ELF object binary architecture: AMD x86-64
+nov. 02 16:24:21 localhost.localdomain systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8802]: Process 614 (systemd-journal) of user 0 dumped core.
+nov. 02 16:24:21 localhost.localdomain systemd-coredump[8808]: Process 626 (systemd-udevd) of user 0 dumped core.
+                                                               
+                                                               Stack trace of thread 626:
+                                                               #0  0x00007f46a79113e7 sendmsg (libc.so.6 + 0x1113e7)
+                                                               #1  0x00007f46a7e8020d sd_pid_notify_with_fds (libsystemd-shared-252.so + 0x28020d)
+                                                               #2  0x00007f46a7e89a35 sd_event_wait (libsystemd-shared-252.so + 0x289a35)
+                                                               #3  0x00007f46a7e8b3db sd_event_run (libsystemd-shared-252.so + 0x28b3db)
+                                                               #4  0x00007f46a7e8b51f sd_event_loop (libsystemd-shared-252.so + 0x28b51f)
+                                                               #5  0x0000557006ef358f main (udevadm + 0x1b58f)
+                                                               #6  0x00007f46a782a610 __libc_start_call_main (libc.so.6 + 0x2a610)
+                                                               #7  0x00007f46a782a6c0 __libc_start_main@@GLIBC_2.34 (libc.so.6 + 0x2a6c0)
+                                                               #8  0x0000557006ef3cf5 _start (udevadm + 0x1bcf5)
+                                                               ELF object binary architecture: AMD x86-64
+nov. 02 16:39:39 localhost.localdomain sudo[9843]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:39:39 localhost.localdomain sudo[9843]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:39:54 localhost.localdomain sudo[9889]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:39:54 localhost.localdomain sudo[9889]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:39:57 localhost.localdomain sudo[9889]:   julien : command not allowed ; PWD=/home/julien ; USER=root ; COMMAND=/bin/systemctl restart sshd
+nov. 02 16:42:26 localhost.localdomain sudo[10054]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:42:26 localhost.localdomain sudo[10054]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:43:08 localhost.localdomain sudo[10155]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:43:08 localhost.localdomain sudo[10155]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:43:18 localhost.localdomain sudo[10167]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:43:18 localhost.localdomain sudo[10167]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:43:34 localhost.localdomain sudo[10224]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:43:34 localhost.localdomain sudo[10224]: pam_unix(sudo:auth): auth could not identify password for [nadia]
+nov. 02 16:43:36 localhost.localdomain sudo[10224]:    nadia : command not allowed ; PWD=/home/nadia ; USER=root ; COMMAND=list
+nov. 02 16:44:42 localhost.localdomain sudo[10338]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:44:42 localhost.localdomain sudo[10338]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:46:53 localhost.localdomain sudo[10491]: pam_unix(sudo:auth): conversation failed
+nov. 02 16:46:53 localhost.localdomain sudo[10491]: pam_unix(sudo:auth): auth could not identify password for [julien]
+nov. 02 16:46:55 localhost.localdomain sudo[10491]:   julien : 1 incorrect password attempt ; TTY=pts/4 ; PWD=/home/julien ; USER=root ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+nov. 02 16:47:31 localhost.localdomain sudo[10566]:   julien : 2 incorrect password attempts ; TTY=pts/4 ; PWD=/home/julien ; USER=root ; COMMAND=/usr/bin/systemctl restart helios-collect.service
+nov. 02 16:55:06 localhost.localdomain sudo[11022]:   julien : command not allowed ; TTY=pts/4 ; PWD=/home/julien ; USER=root ; COMMAND=/bin/systemctl status helios-collect.service --no-pager
+nov. 02 16:55:29 localhost.localdomain sudo[11045]:   julien : command not allowed ; TTY=pts/4 ; PWD=/home/julien ; USER=root ; COMMAND=/bin/systemctl restart sshd
+nov. 02 16:56:56 localhost.localdomain sudo[11152]:    nadia : command not allowed ; TTY=pts/4 ; PWD=/home/nadia ; USER=root ; COMMAND=list
+nov. 02 17:38:05 localhost.localdomain kernel: watchdog: BUG: soft lockup - CPU#1 stuck for 49s! [kswapd0:57]
+nov. 02 17:38:05 localhost.localdomain rsyslogd[787]: get tty for session '13' failed with [61]:No data available  [v8.2510.0-2.el9_8.2]
+nov. 02 17:38:05 localhost.localdomain rsyslogd[787]: get tty for session '9' failed with [61]:No data available  [v8.2510.0-2.el9_8.2]
+nov. 02 18:02:55 localhost.localdomain systemd[1]: systemd-udevd.service: Watchdog timeout (limit 3min)!
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: Process 8810 (systemd-journal) of user 0 dumped core.
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: Coredump diverted to /var/lib/systemd/coredump/core.systemd-journal.0.845e5c72a16b47be8d6aadf5adbda85d.8810.1793638974000000.zst
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: Stack trace of thread 8810:
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #0  0x00007f96ac48923d sd_event_wait (libsystemd-shared-252.so + 0x28923d)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #1  0x00007f96ac48b3db sd_event_run (libsystemd-shared-252.so + 0x28b3db)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #2  0x000055b0fbcf8065 main (systemd-journald + 0xa065)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #3  0x00007f96abe2a610 __libc_start_call_main (libc.so.6 + 0x2a610)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #4  0x00007f96abe2a6c0 __libc_start_main@@GLIBC_2.34 (libc.so.6 + 0x2a6c0)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: #5  0x000055b0fbcf8745 _start (systemd-journald + 0xa745)
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: ELF object binary architecture: AMD x86-64
+nov. 02 18:02:54 localhost.localdomain systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14034]: Process 8810 (systemd-journal) of user 0 dumped core.
+nov. 02 18:02:55 localhost.localdomain systemd-coredump[14040]: Process 8815 (systemd-udevd) of user 0 dumped core.
+                                                                
+                                                                Stack trace of thread 8815:
+                                                                #0  0x00007fcf0b11154e setsockopt (libc.so.6 + 0x11154e)
+                                                                #1  0x00007fcf0b5deaa2 fd_set_sndbuf (libsystemd-shared-252.so + 0x1deaa2)
+                                                                #2  0x00007fcf0b68001e sd_pid_notify_with_fds (libsystemd-shared-252.so + 0x28001e)
+                                                                #3  0x00007fcf0b689a35 sd_event_wait (libsystemd-shared-252.so + 0x289a35)
+                                                                #4  0x00007fcf0b68b3db sd_event_run (libsystemd-shared-252.so + 0x28b3db)
+                                                                #5  0x00007fcf0b68b51f sd_event_loop (libsystemd-shared-252.so + 0x28b51f)
+                                                                #6  0x0000560d09ccd58f main (udevadm + 0x1b58f)
+                                                                #7  0x00007fcf0b02a610 __libc_start_call_main (libc.so.6 + 0x2a610)
+                                                                #8  0x00007fcf0b02a6c0 __libc_start_main@@GLIBC_2.34 (libc.so.6 + 0x2a6c0)
+                                                                #9  0x0000560d09ccdcf5 _start (udevadm + 0x1bcf5)
+                                                                ELF object binary architecture: AMD x86-64
+nov. 02 18:49:32 localhost.localdomain firewalld[15780]: ERROR: NAME_CONFLICT: new_ipset(): 'helios-blacklist'
+nov. 02 19:19:30 localhost.localdomain sshd-session[15498]: error: mm_reap: preauth child terminated by signal 15
+nov. 02 19:21:01 localhost.localdomain dbus-broker-launch[730]: Activation request for 'org.freedesktop.nm_dispatcher' failed.
+### 7
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+nadia                                  Mon Nov  2 15:40 - 15:40  (00:00)
+
+btmp commence Mon Nov  2 15:40:11 2026
+sysops   pts/1        192.168.56.1     Wed Nov  4 12:53:37 2026   still logged in
+sysops   pts/1        192.168.56.1     Wed Nov  4 12:53:31 2026 - Wed Nov  4 12:53:33 2026  (00:00)
+sysops   pts/1        192.168.56.1     Wed Nov  4 12:53:24 2026 - Wed Nov  4 12:53:29 2026  (00:00)
+sysops   tty1                          Wed Nov  4 12:52:38 2026   still logged in
+reboot   system boot  5.14.0-687.61.1. Wed Nov  4 12:52:19 2026   still running
+sysops   pts/1        192.168.56.1     Mon Nov  2 18:31:07 2026 - Mon Nov  2 19:19:31 2026  (00:48)
+sysops   pts/3        192.168.56.1     Mon Nov  2 17:30:53 2026 - Mon Nov  2 17:40:49 2026  (00:09)
+sysops   pts/3        192.168.56.1     Mon Nov  2 15:31:39 2026 - Mon Nov  2 17:15:43 2026  (01:44)
+sysops   pts/3        192.168.56.1     Mon Nov  2 15:22:22 2026 - Mon Nov  2 15:31:35 2026  (00:09)
+sysops   pts/1        192.168.56.1     Mon Nov  2 15:21:00 2026 - Mon Nov  2 18:18:17 2026  (02:57)
+
+wtmp commence Mon Nov  2 11:51:26 2026
+### 8
+USER        PWD-CHANGE    PWD-EXPIR   LAST-LOGIN FAILED-LOGIN
+root       1969-déc.31                           
+sysops     1969-déc.31                     12:53 
+julien    nov.02/01:00              nov.02/17:30 
+nadia     nov.02/01:00              nov.02/17:31 nov.02/15:40
+tarek     nov.02/01:00              nov.02/16:29 
+audit-ext nov.02/01:00 nov.23/01:00 nov.02/16:25 

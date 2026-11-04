@@ -1,0 +1,25 @@
+table inet firewalld
+table inet firewalld {
+	chain filter_IN_work {
+		jump filter_INPUT_POLICIES_pre
+		jump filter_IN_work_pre
+		jump filter_IN_work_log
+		jump filter_IN_work_deny
+		jump filter_IN_work_allow
+		jump filter_IN_work_post
+		jump filter_INPUT_POLICIES_post
+		meta l4proto { icmp, ipv6-icmp } accept
+		meta pkttype host log prefix "filter_IN_work_REJECT: "
+		reject with icmpx admin-prohibited
+	}
+}
+table inet firewalld {
+	set helios-blacklist {
+		type ipv4_addr
+		size 65536
+		flags interval
+	}
+}
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT

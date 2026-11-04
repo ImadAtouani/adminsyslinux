@@ -1,0 +1,5 @@
+NEXT                        LEFT     LAST PASSED UNIT                    ACTIVATES
+Wed 2026-11-04 13:02:00 CET 43s left -    -      helios-watch-auth.timer helios-watch-auth.service
+
+1 timers listed.
+Pass --all to see loaded but inactive timers, too.

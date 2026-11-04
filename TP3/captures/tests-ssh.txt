@@ -1,0 +1,29 @@
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: No route to host.
+1. ancien port : echec attendu (1)
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+localhost.localdomain
+sysops wheel ssh-admins
+2. doit reussir (0)
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+root@192.168.56.10: Permission denied (publickey).
+3. root : echec attendu (255)
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+sysops@192.168.56.10: Permission denied (publickey).
+4. mot de passe : echec attendu (255)
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+nadia@192.168.56.10: Permission denied (publickey).
+5. hors ssh-admins : echec attendu (255)
+*** Serveur Helios Logistique - acces strictement reserve ***
+Toute connexion est journalisee.
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: channel 2: open failed: administratively prohibited: open failed
+Connected to 127.0.0.1:9999.
+Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
+6. tunnel : (0)
+Unable to negotiate with 192.168.56.10 port 2242: no matching key exchange method found. Their offer: curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,ext-info-s,kex-strict-s-v00@openssh.com
+7. KEX SHA-1 : echec attendu (255)

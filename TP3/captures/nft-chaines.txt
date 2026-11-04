@@ -1,0 +1,16 @@
+table inet firewalld {
+	chain filter_IN_work_allow {
+		tcp dport 2242 limit rate 6/minute burst 5 packets accept
+	}
+}
+table inet firewalld {
+	chain filter_IN_work_deny {
+		tcp dport 10051 reject
+		ip saddr @helios-blacklist drop
+	}
+}
+table inet firewalld {
+	chain filter_IN_work_log {
+		tcp dport 2242 limit rate 3/minute burst 5 packets log prefix "SSH-NEW " level info
+	}
+}

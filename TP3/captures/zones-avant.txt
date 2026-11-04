@@ -1,0 +1,7 @@
+enp0s3 : 
+bond0 : 
+bond0.42 : 
+enp0s8 : 
+bond0-p1 : 
+bond0-p2 : 
+lo : 

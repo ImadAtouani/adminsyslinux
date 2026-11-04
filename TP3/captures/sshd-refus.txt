@@ -1,0 +1,40 @@
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: Postponed publickey for sysops from 192.168.56.11 port 46974 ssh2 [preauth]
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: Accepted publickey for sysops from 192.168.56.11 port 46974 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+2026-11-02T19:12:48+0100 localhost.localdomain sshd-session[18647]: User child is on pid 18650
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: Connection from 192.168.56.11 port 54502 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: Postponed publickey for sysops from 192.168.56.11 port 54502 ssh2 [preauth]
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: Accepted publickey for sysops from 192.168.56.11 port 54502 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: User child is on pid 18702
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18699]: pam_unix(sshd:session): session closed for user sysops
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18730]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18730]: Connection from 192.168.56.11 port 54510 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18730]: User root from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18730]: Connection closed by invalid user root 192.168.56.11 port 54510 [preauth]
+2026-11-02T19:13:47+0100 localhost.localdomain sshd[18060]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18732]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18732]: Connection from 192.168.56.11 port 54518 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18732]: Connection closed by authenticating user sysops 192.168.56.11 port 54518 [preauth]
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18734]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18734]: Connection from 192.168.56.11 port 54534 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18734]: User nadia from 192.168.56.11 not allowed because none of user's groups are listed in AllowGroups
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18734]: Connection closed by invalid user nadia 192.168.56.11 port 54534 [preauth]
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: Connection from 192.168.56.11 port 54548 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: Postponed publickey for sysops from 192.168.56.11 port 54548 ssh2 [preauth]
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: Accepted key ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo found at /home/sysops/.ssh/authorized_keys:2
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: Accepted publickey for sysops from 192.168.56.11 port 54548 ssh2: ED25519 SHA256:zJx8nT1luWiQsOq19AOFN8SPBpZz5OgBPlkTIxfLtGo
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: pam_unix(sshd:session): session opened for user sysops(uid=1000) by sysops(uid=0)
+2026-11-02T19:13:47+0100 localhost.localdomain sshd-session[18736]: User child is on pid 18739
+2026-11-02T19:13:50+0100 localhost.localdomain sshd-session[18736]: pam_unix(sshd:session): session closed for user sysops
+2026-11-02T19:15:45+0100 localhost.localdomain sshd-session[18833]: main: SHA1 in signatures is disabled for RSA keys
+2026-11-02T19:15:45+0100 localhost.localdomain sshd-session[18833]: Connection from 192.168.56.11 port 33202 on 192.168.56.10 port 2242 rdomain ""
+2026-11-02T19:15:45+0100 localhost.localdomain sshd-session[18833]: Unable to negotiate with 192.168.56.11 port 33202: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,ext-info-c,kex-strict-c-v00@openssh.com [preauth]
+2026-11-02T19:15:45+0100 localhost.localdomain sshd[18060]: srclimit_penalise: ipv4: new 192.168.56.11/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
