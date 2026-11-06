@@ -32,3 +32,4 @@ adminsyslinux/
     ├── configs/        units, scripts (publication, sauvegarde, audit), sudoers, sonde Zabbix, ACL, pare-feu
     └── preuves/        audit.txt, score de durcissement, mesure sar, SELinux, captures Zabbix
 ```
+
