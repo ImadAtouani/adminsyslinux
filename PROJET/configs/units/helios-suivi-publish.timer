@@ -1,0 +1,11 @@
+[Unit]
+Description=Publication de etat.json toutes les 2 minutes
+
+[Timer]
+OnActiveSec=5s
+OnBootSec=30s
+OnUnitActiveSec=2min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

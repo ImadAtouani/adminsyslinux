@@ -1,0 +1,10 @@
+[OK] E1 - comptes et groupe
+[OK] E2 - repertoire publie (setgid + ACL)
+[OK] E3 - script de publication
+[OK] E4 - units systemd
+[OK] E5 - delegation sudo
+[OK] E6 - pare-feu
+[OK] E7 - non-regression securite
+[OK] E8 - supervision Zabbix/sysstat
+[OK] E9 - sauvegarde
+Bilan : 9/9

@@ -1,0 +1,52 @@
+[Unit]
+Description=Portail de suivi Helios (HTTP 8080)
+Documentation=man:systemd.exec(5)
+After=network.target helios-collect.service
+PartOf=helios.target
+
+[Service]
+Type=simple
+User=helios-suivi
+Group=helios-suivi
+ExecStart=/usr/bin/python3 -m http.server 8080 --bind 0.0.0.0 --directory /srv/helios/suivi/www
+Environment=PYTHONDONTWRITEBYTECODE=1
+Restart=on-failure
+RestartSec=2
+SyslogIdentifier=helios-suivi
+
+# Ressources
+MemoryMax=128M
+CPUQuota=50%
+
+# Durcissement : le serveur n'ecrit nulle part
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+NoNewPrivileges=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+ProtectProc=invisible
+ProcSubset=pid
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RemoveIPC=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+SystemCallFilter=~@privileged @resources
+UMask=0077
+IPAddressDeny=any
+IPAddressAllow=127.0.0.0/8 10.42.0.0/24
+
+[Install]
+WantedBy=helios.target
